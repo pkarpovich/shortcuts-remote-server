@@ -1,10 +1,10 @@
-# Shortcut Remote Server
+# Shortcuts Remote Server
 
 Simple server to run a shortcut from iPhone or iPad on a remote MacOs computer
 
 ## Example
 
-Run shortcut on remote computer
+Run shortcuts on remote computer
 ```bash
 GET http://{{url}}/execute?name={{shortcut_name}}
 ```
