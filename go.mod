@@ -1,3 +1,3 @@
-module shortcuts-remote-server
+module github.com/pkarpovich/shortcuts-remote-server
 
 go 1.19
