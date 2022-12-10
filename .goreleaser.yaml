@@ -5,24 +5,15 @@ builds:
     - CGO_ENABLED=0
   goos:
     - darwin
-    - linux
-    - windows
   goarch:
-    - 386
     - amd64
-    - arm
+    - arm64
   goarm:
     - 6
     - 7
-  ignore:
-    - goos: darwin
-      goarch: 386
 
 archives:
   - format: tar.gz
-    format_overrides:
-      - goos: windows
-        format: zip
     files:
       - LICENSE
       - README.md
