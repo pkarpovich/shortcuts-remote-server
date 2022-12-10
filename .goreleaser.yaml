@@ -12,20 +12,11 @@ builds:
     - 6
     - 7
 
-archives:
-  - format: tar.gz
-    files:
-      - LICENSE
-      - README.md
-
 source:
   enabled: true
 
 release:
   prerelease: auto
-
-checksum:
-  name_template: checksums.txt
 
 brews:
   - tap:
@@ -37,11 +28,3 @@ brews:
     homepage: https://github.com/pkarpovich/shortcuts-remote-server
     install: |
         bin.install "shortcuts-remote-server"
-
-nfpms:
-  -
-    homepage: https://github.com/pkarpovich/shortcuts-remote-server
-    maintainer: Pavek Karpovich <pavel.karpovich@outlook.com>
-    formats:
-      - deb
-      - rpm
