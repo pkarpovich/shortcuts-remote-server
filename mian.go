@@ -31,17 +31,20 @@ func runCommand(command string) (string, string, error) {
 
 func runShortcut(shortcutName string) error {
 	command := fmt.Sprintf("open 'shortcuts://run-shortcut?name=%s'", shortcutName)
-	out, err, errOut := runCommand(command)
-	if errOut != nil {
+	log.Printf("Command: %s\n", command)
+
+	out, errOut, err := runCommand(command)
+	if err != nil {
 		log.Printf("error: %v\n", err)
 	}
 
 	log.Println("--- stdout ---")
 	log.Println(out)
-	log.Println("--- stderr ---")
-	log.Println(err)
 
-	return errOut
+	log.Println("--- stderr ---")
+	log.Printf("%v\n\n", errOut)
+
+	return err
 }
 
 func runShortcutHandler(w http.ResponseWriter, req *http.Request) {
