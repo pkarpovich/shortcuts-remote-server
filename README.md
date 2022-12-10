@@ -2,6 +2,13 @@
 
 Simple server to run a shortcut from iPhone or iPad on a remote MacOs computer
 
+## Installation
+
+Install with brew:
+```
+brew install pkarpovich/shortcuts-remote-server/shortcuts-remote-server
+```
+
 ## Example
 
 Run shortcuts on remote computer
