@@ -21,7 +21,7 @@ release:
 brews:
   - tap:
       owner: pkarpovich
-      name: homebrew-shortcuts-remote-server
+      name: homebrew-apps
     commit_author:
       name: Pavel Karpovich
       email: pavel.karpovich@outlook.com

@@ -6,7 +6,8 @@ Simple server to run a shortcut from iPhone or iPad on a remote MacOs computer
 
 Install with brew:
 ```
-brew install pkarpovich/shortcuts-remote-server/shortcuts-remote-server
+brew tap pkarpovich/apps
+brew install pkarpovich/apps/shortcuts-remote-server
 ```
 
 ## Example

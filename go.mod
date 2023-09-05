@@ -1,3 +1,3 @@
 module github.com/pkarpovich/shortcuts-remote-server
 
-go 1.19
+go 1.21
